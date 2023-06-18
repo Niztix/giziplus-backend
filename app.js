@@ -23,7 +23,7 @@ app.get("/", async (req, res) => {
   });
 });
 
-// Get Tour
+//  Get Tour
 app.get("/:id", async (req, res) => {
   try {
     const tour = await Tour.findById(req.params.id);
